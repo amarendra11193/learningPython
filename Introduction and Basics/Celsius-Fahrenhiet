@@ -1,0 +1,12 @@
+def cel_fah(value, param):
+    if (param == "C" or param == "C"):
+        return value*(9/5)+32,"Fahrenheit"
+    elif (param == "f" or param == "F"):
+        return (value-32)*5/9,"Celsius"
+    else:
+        return "Incorrect Parameter or Value"
+
+value = float(input("Enter the Value: "))
+param = input("Enter the unit C for Celsius & F for Fahrenheit: (C/F): ")
+result = cel_fah(value, param)
+print("Result is: ",result)
