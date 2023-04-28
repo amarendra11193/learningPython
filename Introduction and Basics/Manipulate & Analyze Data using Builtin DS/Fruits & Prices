@@ -1,0 +1,16 @@
+# def fruits_price(fruitName, fruitPrice):
+fruits = {}
+many = int(input("Enter the number of Fruits: "))
+total = 0
+
+for e in range(many):
+    fruitName = input("Fruit Name: ")
+    fruitPrice = float(input("Fruit Price: "))
+    fruits[fruitName]=fruitPrice
+    total = total+fruitPrice
+
+# print(fruits)
+for fruitName in fruits:
+    key, value = fruitName, fruits[fruitName]
+    print (key, value)
+print("Total is: ", total)

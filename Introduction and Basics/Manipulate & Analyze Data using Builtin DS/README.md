@@ -2,6 +2,7 @@
 Programs I will create to learn and understand the builtin Data Structure
 
 <b>Here is the Plan:</b>
+
 1. Find the largest number in a list of numbers using a `for` loop.
 2. Count the number of occurrences of a specific element in a list using a `for` loop.
 3. Create a dictionary that maps the names of fruits to their prices, and then calculate the total cost of a shopping list.
