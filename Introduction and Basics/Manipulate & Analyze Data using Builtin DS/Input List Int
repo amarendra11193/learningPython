@@ -1,0 +1,5 @@
+input_str = input("Enter the list of numbers separated by commas(,): ")
+input_list = input_str.split(",")
+num_list = [int(num) for num in input_list]
+
+print(input_list)

@@ -1,0 +1,12 @@
+def largest_num(list):
+    a=list[0]
+    for x in list:
+        if (a < x):
+            a=x
+    return a
+
+list_temp = input("Enter the list of numbers separated by commas (,): ")
+list_temp_next = list_temp.split(",")
+list = [int(num) for num in list_temp_next]
+result = largest_num(list)
+print("Result is: ", result)
