@@ -1,13 +1,14 @@
-def is_even(my_list, new_list):
-    x=0
+def is_even(my_list):
     for i in my_list:
         if i%2 == 0:
-            new_list[x] = i
-            x += 1
+            new_list.append(i)
     return new_list
 
 my_listTemp = input("Enter the list of the Numbers separated by commas (,): ")
 my_list1 = my_listTemp.split(",")
 my_list = [int(num) for num in my_list1]
+print (my_list)
+new_list = []
 
-print("The even numbers are: ", is_even)
+result = is_even(my_list)
+print("The even numbers are: ", result)
