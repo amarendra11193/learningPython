@@ -1,0 +1,20 @@
+# Use a dictionary comprehension to create a dictionary that maps the lengths 
+# of words in a sentence to the words themselves.
+
+sentence = input("Input the sentence: ")
+sentence_List = sentence.split()
+# print(len(sentence_List))
+# print(sentence_List)
+# print(len(sentence_List))
+# print (list(sentence))
+
+word_Dict = {}
+
+for e in range(len(sentence_List)):
+    word = sentence_List[e]   
+    word_length = len(list(word))
+    word_Dict[word] = word_length
+
+for word in word_Dict:
+    key, value = word, word_Dict[word]
+    print (key, value)
